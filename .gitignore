@@ -1,0 +1,12 @@
+.gitignore.txt
+*.lock
+*.bin
+/bin
+.DS_Store
+/build
+/.gradle
+.project
+.settings/org.eclipse.buildship.core.prefs
+/gradle
+gradlew
+*.bat
