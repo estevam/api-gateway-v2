@@ -4,7 +4,7 @@ A unified API Gateway built with **Spring Cloud Gateway** that supports routing 
 
 * ✅ REST APIs (HTTP/1.1)
 * ✅ gRPC Services (HTTP/2 + TLS)
-* ✅ Web Applications (React / SPA)
+* ✅ Web Applications (React etc.)
 * ✅ Custom Filters
 * ✅ SSL / mTLS Support
 * ✅ Load Balancing Ready
@@ -37,13 +37,14 @@ A unified API Gateway built with **Spring Cloud Gateway** that supports routing 
 
 # ⚙️ Technologies Used
 
-* ☕ Java 17+
+* ☕ Java 25
+* ⚡ Gradle
 * 🌱 Spring Boot
 * 🌐 Spring Cloud Gateway
 * 🔄 Reactor Netty
+* 📡 REST (HTTP/1)
 * 📡 gRPC (HTTP/2)
 * 🔐 TLS / SSL (PKCS12 / JKS / PEM)
-* ⚡ Gradle
 
 ---
 
