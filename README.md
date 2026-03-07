@@ -199,72 +199,6 @@ java -jar build/libs/gateway.jar
 
 ---
 
-# 🧪 Testing
-
-### Test REST
-
-```bash
-curl https://localhost:9090/api/users
-```
-
-### Test gRPC
-
-```bash
-grpcurl -insecure localhost:9090 list
-```
-
-### Test Web
-
-Open:
-
-```
-https://localhost:9090/app
-```
-
----
-
-# 🐛 Common Issues
-
-### ❌ `SSLHandshakeException: certificate_unknown`
-
-Cause:
-
-* Certificate not trusted
-* Missing truststore
-* CN mismatch
-
-Fix:
-
-* Import certificate into truststore
-* Verify hostname
-* Enable HTTP/2
-
----
-
-### ❌ `Unexpected request [PRI * HTTP/2.0]`
-
-Cause:
-
-* HTTP/2 request sent to HTTP/1.1 endpoint
-
-Fix:
-
-```properties
-server.http2.enabled=true
-```
-
----
-
-# 🔮 Future Improvements
-
-* OAuth2 / JWT Authentication
-* Service Discovery (Eureka / Consul)
-* Rate Limiting
-* Circuit Breaker
-* Observability (Micrometer + Prometheus)
-
----
-
 # 🤝 Contributing
 
 Pull requests are welcome!
@@ -274,16 +208,3 @@ Pull requests are welcome!
 # 📄 License
 
 MIT License
-
----
-
----
-
-If you want, I can also generate:
-
-* 🔹 A version tailored specifically for **gRPC + TLS production**
-* 🔹 A version with **Docker + Docker Compose**
-* 🔹 A version including **Eureka Service Discovery**
-* 🔹 A more “enterprise-grade” README for GitHub portfolio**
-
-Just tell me 👍
