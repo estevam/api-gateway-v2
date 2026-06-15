@@ -22,7 +22,7 @@ import reactor.core.publisher.Mono;
 @Component
 public class GrpcForwardingFilter extends GatewayUtil implements GatewayFilter, Ordered {
 
-	private static final URI TARGET_URI = URI.create("https://localhost:9099");
+	private static final URI TARGET_URI = URI.create("https://localhost:9090");
 
 	@Override
 	public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
